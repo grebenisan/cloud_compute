@@ -1,0 +1,16 @@
+---
+applications:
+- name: chevelle-micro
+  buildpack: java_buildpack
+  path: target/chevelle-micro-1.jar
+  memory: 1G
+  instances: 1
+  disk_quota: 1G
+  stack: cflinuxfs2
+  timeout: 80
+  routes:
+  - route: chevelle-micro.apps.pcfwi.domain.com 
+  - route: chevelle-micro.cpi.domain.com
+env:
+  spring_profiles_active: prod
+  config_server_uri: https://bds-config-server.cpi.domain.com

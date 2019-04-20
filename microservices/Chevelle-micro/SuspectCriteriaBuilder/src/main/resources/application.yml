@@ -1,0 +1,18 @@
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        default_schema: CHEVELLE
+
+  datasource:
+    url: jdbc:oracle:thin:@server.domain.com:1521/server.domain.com
+    username: SomeUser
+    password: SomePassword
+    driver-class-name: oracle.jdbc.OracleDriver
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: chevelle-micro
+  cloud:
+    config:
+      uri: ${config_server_uri:https://bds-config-server.apps.pcfepg2wi.domain.com}
+      headers:
+        Authorization: Bearer ...........
+
+  profiles:
+    active: ${spring_profiles_active:code}
