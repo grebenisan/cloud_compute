@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: chevelle-ui-micro
+  cloud:
+    config:
+      uri: ${config_server_uri:https://config-server.apps.host.domain.com}
+      headers:
+        Authorization: Bearer abc123ABC123
+
+  profiles:
+    active: ${spring_profiles_active:develop}

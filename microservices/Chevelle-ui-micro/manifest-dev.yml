@@ -1,0 +1,16 @@
+---
+applications:
+- name: chevelle-ui-micro-dev
+  buildpack: java_buildpack
+  path: target/chevelle-ui-micro-0.0.1.jar
+  memory: 1G
+  instances: 1
+  disk_quota: 1G
+  stack: cflinuxfs2
+  timeout: 80
+  routes:
+  - route: chevelle-ui-micro-dev.apps.host.domain.com
+  - route: chevelle-ui-micro-dev.host.domain.com
+env:
+  spring_profiles_active: develop
+  config_server_uri: https://config-server.apps.host.domain.com
