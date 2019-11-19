@@ -1,0 +1,16 @@
+---
+applications:
+- name: basic-service-registry
+  buildpack: java_buildpack
+  path: target/service-registry-1-SNAPSHOT.jar
+  memory: 1G
+  instances: 1
+  routes:
+  - route: basic-service-registry.apps.host.domain.com
+  - route: basic-service-registry.server.domain.com
+  services:
+  - registry
+
+env:
+  spring_profiles_active: dev
+  config_server_uri: https://config-server.apps.server.domain.com
