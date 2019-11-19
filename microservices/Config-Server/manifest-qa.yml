@@ -1,0 +1,10 @@
+---
+applications:
+- name: config-server-qa
+  buildpack: java_buildpack
+  path: target/config-server-0.0.1-SNAPSHOT.jar
+  memory: 1G
+  instances: 1
+
+env:
+   spring_profiles_active: qa
