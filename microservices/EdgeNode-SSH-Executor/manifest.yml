@@ -1,0 +1,7 @@
+---
+applications:
+- name: edgenode-ssh-executor
+  buildpack: java_buildpack
+  path: target/edgenode-ssh-executor-0.0.1-SNAPSHOT.jar
+  memory: 1G
+  instances: 1

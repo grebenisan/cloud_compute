@@ -1,0 +1,11 @@
+---
+applications:
+- name: edgenode-ssh-executor-test
+  buildpack: java_buildpack
+  path: target/edgenode-ssh-executor-1.0.0.jar
+  memory: 1G
+  instances: 1
+
+env:
+  spring_profiles_active: test
+  config_server_uri: https://config-server-test.apps.server.domain.com

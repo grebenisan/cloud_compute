@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: edgenode-ssh-executor
+  cloud:
+    config:
+      uri: ${config_server_uri:https://config-server.apps.server.domain.com} #
+      headers:
+        Authorization: Bearer abc123ABC123 ...
+
+  profiles:
+    active: ${spring_profiles_active:dev}
+
