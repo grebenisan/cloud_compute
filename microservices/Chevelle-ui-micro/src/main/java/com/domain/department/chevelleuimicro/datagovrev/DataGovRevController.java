@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/datagov")
-@CrossOrigin(origins = { "http://localhost", "http://localhost:4200", "https://chevelle-ui-dev.apps.host.domain.com", "https://chevelle-ui-dev.host.domain.com", "https://chevelle-ui-test.apps.host.domain.com", "https://chevelle-ui-test.host.domain.com", "https://chevelle-ui-qa.apps.host.domain.com", "https://chevelle-ui-qa.host.domain.com", "https://chevelle-ui.apps.pcfmi.gm.com", "https://chevelle-ui.cpi.gm.com" }, exposedHeaders = { "ETag", "ETAG", "dg_pending_cnt", "dg_total_cnt" }, methods= { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE })
+@CrossOrigin(origins = { "http://localhost", "http://localhost:4200", "https://chevelle-ui-dev.apps.host.domain.com", "https://chevelle-ui-dev.host.domain.com", "https://chevelle-ui-test.apps.host.domain.com", "https://chevelle-ui-test.host.domain.com", "https://chevelle-ui-qa.apps.host.domain.com", "https://chevelle-ui-qa.host.domain.com", "https://chevelle-ui.apps.server.domain.com", "https://chevelle-ui.host.domain.com" }, exposedHeaders = { "ETag", "ETAG", "dg_pending_cnt", "dg_total_cnt" }, methods= { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE })
 public class DataGovRevController {
 
     @Autowired
